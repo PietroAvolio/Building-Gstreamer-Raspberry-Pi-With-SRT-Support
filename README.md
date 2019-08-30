@@ -17,7 +17,7 @@ First of all we need to download, compile and install SRT libraries.
 ### Gstreamer
 
 ### Raspicam Src
-I found [This plugin for natively using the raspicam inside a gstreamer pipeline](https://github.com/thaytan/gst-rpicamsrc) extremely usefull.
+I found [this plugin for natively using the raspicam inside a gstreamer pipeline](https://github.com/thaytan/gst-rpicamsrc) extremely usefull.
 
 Here's how to install it:
 ```bash
@@ -27,6 +27,7 @@ cd gst-rpicamsrc
 make
 sudo make install
 ```
+Please not the choice of libdir: we're placing them in the exact same folder of where we placed gstreamer libraries.
 
 ### Usage example
 ```bash
