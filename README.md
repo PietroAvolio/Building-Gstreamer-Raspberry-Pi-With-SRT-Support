@@ -12,8 +12,13 @@ I'm putting this a the beginning because there are 99% chance I will not need gs
 ## Let's start
 
 ### SRT 
-Clone [SRT Project from GitHub](https://github.com/Haivision/srt) and follow the instruction you can find in the projct README. Just remember after the make command to 
-`make install`. Libraries will be placed in `/usr/local` and this should be fine
+The project can be found here: [SRT Project from GitHub](https://github.com/Haivision/srt).
+```bash
+sudo apt-get install tclsh pkg-config cmake libssl-dev build-essential
+./configure
+make
+sudo make install
+```
 
 ### Gstreamer
 Download ad run the .sh script you can find in this repo and everything should run smoothly. It will take a lot of time but don't worry :) Just don't waste your time in front of your PI because it will seriously take a lot of time!
