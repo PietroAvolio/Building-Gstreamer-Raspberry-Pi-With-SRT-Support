@@ -22,6 +22,7 @@ Super noob tip: after downloading the sh file make it executable using
 ```bash
 chmod u+x gstreamer_build.sh
 ```
+**Please note: This will not build anything under gst-libav because I'm getting an error and I really don't need it so i just skipped it**
 
 ### Raspicam Src
 I found [this plugin for natively using the raspicam inside a gstreamer pipeline](https://github.com/thaytan/gst-rpicamsrc) extremely usefull.
