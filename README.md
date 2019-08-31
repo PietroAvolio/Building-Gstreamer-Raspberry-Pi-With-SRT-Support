@@ -12,9 +12,17 @@ I'm putting this a the beginning because there are 99% chance I will not need gs
 ## Let's start
 
 ### SRT 
-First of all we need to download, compile and install SRT libraries.
+Clone [SRT Project from GitHub](https://github.com/Haivision/srt) and follow the instruction you can find in the projct readme. Just remember at after the make command to 
+`make install`
+Libraries will be placed in `/usr/local` and this should be fine
 
 ### Gstreamer
+Download ad run the .sh script you can find in this repo and everything should run smoothly. It will take a lot of time but don't worry :) Just don't waste your time in front of your PI because it will seriously take a lot of time!
+
+Super noob tip: after downloading the sh file make it executable using
+```bash
+chmod u+x gstreamer_build.sh
+```
 
 ### Raspicam Src
 I found [this plugin for natively using the raspicam inside a gstreamer pipeline](https://github.com/thaytan/gst-rpicamsrc) extremely usefull.
