@@ -14,7 +14,7 @@ I'm putting this a the beginning because there are 99% chance I will not need gs
 ### Setting up the RPI
 Please run `sudo raspi-config` and go into 
 ```diff
-- 5 Ubterfacing Options
+- 5 Interfacing Options
 ```
 and make sure to enable the camera. A reboot is recommended right after.
 
@@ -30,7 +30,7 @@ sudo make install
 ```
 
 ### Gstreamer
-Download ad run the .sh script you can find in this repo and everything should run smoothly. It will take a lot of time but don't worry :) Just don't waste your time in front of your PI because it will seriously take a lot of time!
+Download and run the .sh script you can find in this repo and everything should run smoothly. It will take a lot of time but don't worry :) Just don't waste your time in front of your PI because it will seriously take a lot of time!
 
 At the moment of writing the latest gStreamer release is 1.16. You can change the release version you want to build just changing it on line 4 of the .sh script.
 
