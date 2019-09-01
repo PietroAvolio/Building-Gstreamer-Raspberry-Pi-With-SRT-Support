@@ -51,7 +51,15 @@ sudo make install
 ```
 Please not the choice of libdir: we're placing them in the exact same folder of where we placed gstreamer libraries.
 
-### Usage example
+## Usage example
+On the RPI:
 ```bash
 gst-launch-1.0 -v rpicamsrc preview=true sensor-mode=5 ! video/x-h264,width=1640,height=922,framerate=40/1 ! mpegtsmux ! srtsink uri=srt://:8888
 ```
+On the receiver you can either:
+### Use VLC
+You can find the stream at srt://<your rpi address>:8888
+### Use a gStreamer Pipeline
+```bash
+gst-launch-1.0 srtsrc uri=srt://192.168.1.55:8888 ! decodebin ! autovideosink sync=false
+``` 
