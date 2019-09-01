@@ -56,7 +56,7 @@ Please not the choice of libdir: we're placing them in the exact same folder of 
 ## Usage example
 On the RPI:
 ```bash
-gst-launch-1.0 -v rpicamsrc preview=true sensor-mode=5 ! video/x-h264,width=1640,height=922,framerate=40/1 ! mpegtsmux ! srtsink uri=srt://:8888
+gst-launch-1.0 -v rpicamsrc preview=true sensor-mode=5 bitrate=8000000! video/x-h264,width=1640,height=922,framerate=40/1 ! mpegtsmux ! srtsink uri=srt://:8888
 ```
 On the receiver you can either:
 ### Use VLC
