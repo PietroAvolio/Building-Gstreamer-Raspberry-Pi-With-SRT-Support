@@ -15,6 +15,8 @@ I'm putting this a the beginning because there are 99% chance I will not need gs
 The project can be found here: [SRT Project from GitHub](https://github.com/Haivision/srt).
 ```bash
 sudo apt-get install tclsh pkg-config cmake libssl-dev build-essential
+git clone https://github.com/Haivision/srt
+cd srt
 ./configure
 make
 sudo make install
