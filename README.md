@@ -11,6 +11,13 @@ I'm putting this a the beginning because there are 99% chance I will not need gs
 
 ## Let's start
 
+### Setting up the RPI
+Please run `sudo raspi-config` and go into 
+```diff
+- 5 Ubterfacing Options
+```
+and make sure to enable the camera. A reboot is recommended right after.
+
 ### SRT 
 The project can be found here: [SRT Project from GitHub](https://github.com/Haivision/srt).
 ```bash
