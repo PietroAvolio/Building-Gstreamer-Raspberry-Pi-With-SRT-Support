@@ -32,6 +32,8 @@ sudo make install
 ### Gstreamer
 Download ad run the .sh script you can find in this repo and everything should run smoothly. It will take a lot of time but don't worry :) Just don't waste your time in front of your PI because it will seriously take a lot of time!
 
+At the moment of writing the latest gStreamer release is 1.16. You can change the release version you want to build just changing it on line 4 of the .sh script.
+
 Super noob tip: after downloading the sh file make it executable using
 ```bash
 chmod u+x gstreamer_build.sh
